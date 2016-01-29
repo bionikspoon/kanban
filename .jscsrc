@@ -6,6 +6,7 @@
 
   "requireCurlyBraces": true,
   "requireParenthesesAroundIIFE": true,
+  "requireSpaceAfterKeywords": null,
 
   "maximumLineLength": 120,
   "validateLineBreaks": "LF",
