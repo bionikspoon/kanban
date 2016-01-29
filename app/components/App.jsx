@@ -1,6 +1,9 @@
 import uuid from 'node-uuid';
 import React from 'react';
 
+//noinspection ES6UnusedImports
+import Notes from './Notes.jsx';
+
 //noinspection JSUnusedLocalSymbols,JSUnresolvedVariable
 export default class App extends React.Component {
   constructor(props) {
@@ -25,14 +28,11 @@ export default class App extends React.Component {
   }
 
   render() {
-    const notes = this.state.notes.map(note =><li key={note.id}>{note.task}</li>);
-
+    const notes = this.state.notes;
     return (
       <div>
         <button onClick={this.addNote}>+</button>
-        <ul>
-          {notes}
-        </ul>
+        <Notes notes={notes} />
       </div>
     );
   }

@@ -1,3 +1,3 @@
 import React from 'react';
 
-export default () => <div><h1>Hello World!</h1></div>;
+export default ({task}) => <div>{task}</div>;
