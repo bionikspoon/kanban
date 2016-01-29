@@ -11,6 +11,7 @@
   "maximumLineLength": 120,
   "validateLineBreaks": "LF",
   "validateIndentation": 2,
+  "validateQuoteMarks": null,
 
   "disallowKeywords": ["with"],
   "disallowSpacesInsideObjectBrackets": null,
