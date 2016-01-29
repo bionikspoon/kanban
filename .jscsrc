@@ -20,6 +20,6 @@
   "excludeFiles": [
     "build/**",
     "node_modules/**",
-      "./webpack.config.js"
+    "./webpack.config.babel.js"
   ]
 }
