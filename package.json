@@ -5,7 +5,8 @@
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "keywords": [
     "manu",
@@ -17,7 +18,9 @@
   "author": "Manu Phatak <bionikspoon@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^1.12.12"
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.7.3"
   },
   "dependencies": {},
   "repository": {
