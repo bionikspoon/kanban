@@ -13,5 +13,12 @@
     "babel-plugin-transform-object-assign",
     "babel-plugin-transform-object-rest-spread"
 
-  ]
+  ],
+  "env": {
+    "start": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
+  }
 }
