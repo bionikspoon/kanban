@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "lint": "eslint . --ext .js --ext .jsx"
   },
   "keywords": [
     "manu",
@@ -19,7 +20,12 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^0.23.1",
+    "eslint-loader": "^1.2.1",
+    "jscs": "^2.9.0",
+    "jscs-loader": "^0.2.0",
+    "postcss-loader": "^0.8.0",
     "style-loader": "^0.13.0",
+    "stylelint": "^4.1.0",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.7.3"
