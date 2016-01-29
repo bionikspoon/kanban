@@ -11,20 +11,15 @@
   "validateLineBreaks": "LF",
   "validateIndentation": 2,
 
-  "disallowKeywords": [
-    "with"
-  ],
+  "disallowKeywords": ["with"],
   "disallowSpacesInsideObjectBrackets": null,
-  "disallowImplicitTypeConversion": [
-    "string"
-  ],
+  "disallowImplicitTypeConversion": ["string"],
 
-  "safeContextKeyword": [
-    "that"
-  ],
+  "safeContextKeyword": ["that"],
 
   "excludeFiles": [
     "build/**",
-    "node_modules/**"
+    "node_modules/**",
+      "./webpack.config.js"
   ]
 }
