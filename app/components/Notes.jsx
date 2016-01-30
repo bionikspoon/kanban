@@ -1,6 +1,6 @@
 import React from 'react';
-//noinspection ES6UnusedImports
-import Note from './Note.jsx';
+
+const Note = require('./Note.jsx');
 
 export default ({notes, onEdit, onDelete}) => {
   const notesList = notes.map(note => (
