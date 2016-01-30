@@ -41,7 +41,7 @@ export default class Editable extends React.Component {
       onClick={this.props.onDelete}>x</button>;
   };
 
-  checkEnter = (e) => {
+  checkEnter = e => {
     if(e.key === 'Enter') {
       this.finishEdit(e);
     }

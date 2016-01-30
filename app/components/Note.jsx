@@ -22,6 +22,7 @@ export default class Note extends React.Component {
     const ref = (e) => e ? e.selectionStart = this.props.task.length : null;
 
     return <input
+      type="text"
       ref={ref}
       autoFocus={true}
       defaultValue={this.props.task}

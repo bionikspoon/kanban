@@ -7,7 +7,7 @@ import NoteActions from '../actions/NoteActions';
 import NoteStore from '../stores/NoteStore';
 import LaneActions from '../actions/LaneActions';
 
-class Lane extends React.Component {
+export default class Lane extends React.Component {
   constructor(props) {
     super(props);
 
@@ -59,10 +59,13 @@ class Lane extends React.Component {
     );
   }
 
-  addNote(laneId) {
+  addNote(laneId, e) {
+    e.stopPropagation();
+
     const note = NoteActions.create({task: 'New task'});
+
     LaneActions.attachToLane({
-      laneId: laneId,
+      laneId,
       noteId: note.id
     });
   }
@@ -111,4 +114,3 @@ class Lane extends React.Component {
 
 }
 
-export default Lane;

@@ -5,7 +5,7 @@ import LaneActions from '../actions/LaneActions';
 import LaneStore from '../stores/LaneStore';
 import Lanes from './Lanes.jsx';
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
     const stores = {LaneStore};
     const inject = {
@@ -26,8 +26,9 @@ export default class App extends React.Component {
     );
   }
 
-  addLane = () => {
+  addLane() {
     LaneActions.create({name: 'New lane'});
-  };
+  }
 
 }
+export default App;

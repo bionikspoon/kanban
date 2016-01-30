@@ -62,11 +62,6 @@ body {
   border:           0;
 }
 
-.add-note {
-  background-color: #fdfdfd;
-  border:           1px solid #ccc;
-}
-
 .notes {
   margin:       .5em;
   padding-left: 0;
