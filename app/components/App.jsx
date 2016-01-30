@@ -2,7 +2,7 @@ import React from 'react';
 import NoteActions from '../actions/NoteActions';
 import NoteStore from '../stores/NoteStore';
 
-const Notes = require('./Notes.jsx');
+import Notes from './Notes.jsx';
 
 export default class App extends React.Component {
   constructor(props) {

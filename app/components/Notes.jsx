@@ -1,6 +1,5 @@
 import React from 'react';
-
-const Note = require('./Note.jsx');
+import Note from './Note.jsx';
 
 export default ({notes, onEdit, onDelete}) => {
   const notesList = notes.map(note => (
@@ -12,5 +11,6 @@ export default ({notes, onEdit, onDelete}) => {
       />
     </li>
   ));
+
   return <ul className="notes">{notesList}</ul>;
 };
