@@ -1,38 +1,27 @@
 import React from 'react';
 import NoteActions from '../actions/NoteActions';
 import NoteStore from '../stores/NoteStore';
-
+import AltContainer from 'alt-container';
 import Notes from './Notes.jsx';
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = NoteStore.getState();
-  }
-
-  componentDidMount() {
-    NoteStore.listen(this.storeChanged);
-  }
-
-  componentWillUnmount() {
-    NoteStore.unlisten(this.storeChanged);
-  }
-
-  storeChanged = (state) => {
-    this.setState(state);
-  };
-
   render() {
-    const notes = this.state.notes;
+    const stores = {NoteStore};
+    const inject = {
+      notes: () => NoteStore.getState().notes
+    };
     return (
       <div>
         <button className="add-note"
                 onClick={this.addNote}>+
         </button>
-        <Notes notes={notes}
-               onEdit={this.editNote}
-               onDelete={this.deleteNote}
-        />
+        <AltContainer stores={stores}
+                      inject={inject}>
+
+          <Notes onEdit={this.editNote}
+                 onDelete={this.deleteNote} />
+
+        </AltContainer>
       </div>
     );
   }
